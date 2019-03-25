@@ -1,0 +1,172 @@
+[
+    {
+        "name": "abraham/twitteroauth",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/abraham/twitteroauth.git",
+            "reference": "ed70c5de0ea33439fde124d0d7109460bbb59a71"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/ed70c5de0ea33439fde124d0d7109460bbb59a71",
+            "reference": "ed70c5de0ea33439fde124d0d7109460bbb59a71",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": "^5.6 || ^7.0 || ^7.1 || ^7.2"
+        },
+        "require-dev": {
+            "phpmd/phpmd": "~2.6",
+            "phpunit/phpunit": "~5.7",
+            "squizlabs/php_codesniffer": "~3.0"
+        },
+        "time": "2019-01-20T17:52:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Abraham\\TwitterOAuth\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abraham Williams",
+                "email": "abraham@abrah.am",
+                "homepage": "https://abrah.am",
+                "role": "Developer"
+            }
+        ],
+        "description": "The most popular PHP library for use with the Twitter OAuth REST API.",
+        "homepage": "https://twitteroauth.com",
+        "keywords": [
+            "Twitter API",
+            "Twitter oAuth",
+            "api",
+            "oauth",
+            "rest",
+            "social",
+            "twitter"
+        ]
+    },
+    {
+        "name": "josegonzalez/dotenv",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/josegonzalez/php-dotenv.git",
+            "reference": "ff3461f2960737f54054dff4fef3482a2bb9682b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/ff3461f2960737f54054dff4fef3482a2bb9682b",
+            "reference": "ff3461f2960737f54054dff4fef3482a2bb9682b",
+            "shasum": ""
+        },
+        "require": {
+            "m1/env": "2.*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "satooshi/php-coveralls": "1.*",
+            "squizlabs/php_codesniffer": "2.*"
+        },
+        "time": "2017-01-03T01:04:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "josegonzalez\\Dotenv": [
+                    "src",
+                    "tests"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jose Diaz-Gonzalez",
+                "email": "dotenv@josegonzalez.com",
+                "homepage": "http://josediazgonzalez.com",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "dotenv file parsing for PHP",
+        "homepage": "https://github.com/josegonzalez/php-dotenv",
+        "keywords": [
+            "configuration",
+            "dotenv",
+            "php"
+        ]
+    },
+    {
+        "name": "m1/env",
+        "version": "2.1.2",
+        "version_normalized": "2.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/m1/Env.git",
+            "reference": "294addeedf15e1149eeb96ec829f2029d2017d39"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/m1/Env/zipball/294addeedf15e1149eeb96ec829f2029d2017d39",
+            "reference": "294addeedf15e1149eeb96ec829f2029d2017d39",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*",
+            "scrutinizer/ocular": "~1.1",
+            "squizlabs/php_codesniffer": "^2.3"
+        },
+        "suggest": {
+            "josegonzalez/dotenv": "For loading of .env",
+            "m1/vars": "For loading of configs"
+        },
+        "time": "2018-06-19T18:55:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "M1\\Env\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Miles Croxford",
+                "email": "hello@milescroxford.com",
+                "homepage": "http://milescroxford.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
+        "homepage": "https://github.com/m1/Env",
+        "keywords": [
+            ".env",
+            "config",
+            "dotenv",
+            "env",
+            "loader",
+            "m1",
+            "parser",
+            "support"
+        ]
+    }
+]

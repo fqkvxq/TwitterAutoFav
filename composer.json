@@ -1,0 +1,6 @@
+{
+    "require": {
+        "abraham/twitteroauth": "*",
+        "josegonzalez/dotenv": "^2.0"
+    }
+}
