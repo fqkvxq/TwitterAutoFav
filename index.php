@@ -24,12 +24,12 @@ $connection = new TwitterOAuth(
     $accesstokensecret
 );
 
-// タイムライン取得（キーワード：Uber Eats）
+// タイムライン取得（キーワード：デグー）
 $getTimeline = $connection->OAuthRequest(
     'https://api.twitter.com/1.1/search/tweets.json',
     'GET',
     array(
-        "q" => "ちくわ",
+        "q" => "デグー",
         "lang" => "ja",
         "locale" => "ja",
         "result_type" => "mixed",
@@ -47,7 +47,7 @@ $id_array = $tweet_json->statuses;
 $id_arrayCount = count($id_array);
 
 // 配列の中身の数
-for ($i=0; $i < $id_arrayCount; $i++) { 
+for ($i=0; $i < $id_arrayCount; $i++) {
     // idをここで見てる
     $id = $tweet_json->statuses[$i]->id;
     // RTする
