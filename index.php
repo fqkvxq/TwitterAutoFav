@@ -1,10 +1,8 @@
 <?php
-
 // インポート
 require('vendor/autoload.php');
 use Abraham\TwitterOAuth\TwitterOAuth;
 use josegonzalez\Dotenv\Loader as Dotenv;
-
 $appDir = __DIR__;
 Dotenv::load([
     'filepath' =>  $appDir . '/.env',
@@ -29,11 +27,11 @@ $getTimeline = $connection->OAuthRequest(
     'https://api.twitter.com/1.1/search/tweets.json',
     'GET',
     array(
-        "q" => "デグー",
+        "q" => "テスト",
         "lang" => "ja",
         "locale" => "ja",
         "result_type" => "mixed",
-        "count" => "20"
+        "count" => "1"
     )
 );
 
@@ -51,10 +49,5 @@ for ($i=0; $i < $id_arrayCount; $i++) {
     // idをここで見てる
     $id = $tweet_json->statuses[$i]->id;
     // RTする
-    $retweet = $connection->OAuthRequest(
-        'https://api.twitter.com/1.1/statuses/retweet/'.$id.'.json',
-        "POST",
-        $id_array
-    );
-    sleep(5);
+    $connection->post('favorites/create', ['id' => $id]);
 }
