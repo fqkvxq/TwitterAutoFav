@@ -22,22 +22,29 @@ $connection = new TwitterOAuth(
     $accesstokensecret
 );
 
-// タイムライン取得（キーワード：デグー）
+$keyWordList = array(
+    "WEB広告",
+    "広告運用",
+    "ASP",
+);
+$randKw = shuffle($keyWordList);
+$randKw = current($keyWordList);
+var_dump($randKw);
+// タイムライン取得
 $getTimeline = $connection->OAuthRequest(
     'https://api.twitter.com/1.1/search/tweets.json',
     'GET',
     array(
-        "q" => "テスト",
+        "q" => "Web広告",
         "lang" => "ja",
         "locale" => "ja",
         "result_type" => "mixed",
-        "count" => "1"
+        "count" => "30"
     )
 );
 
 // jsonに変換
 $tweet_json = json_decode($getTimeline);
-
 
 $id_array = $tweet_json->statuses;
 
@@ -50,4 +57,5 @@ for ($i=0; $i < $id_arrayCount; $i++) {
     $id = $tweet_json->statuses[$i]->id;
     // RTする
     $connection->post('favorites/create', ['id' => $id]);
+    sleep(60);
 }
