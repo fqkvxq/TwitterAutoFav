@@ -35,7 +35,7 @@ $getTimeline = $connection->OAuthRequest(
     'https://api.twitter.com/1.1/search/tweets.json',
     'GET',
     array(
-        "q" => "Web広告",
+        "q" => $randKw,
         "lang" => "ja",
         "locale" => "ja",
         "result_type" => "mixed",
